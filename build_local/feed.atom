@@ -1,0 +1,100 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title>ROGER</title>
+    <link type="application/atom+xml" rel="self" href="https://artisanstatic.netlify.app/feed.atom"/>
+    <updated>2021-06-16T22:54:26+00:00</updated>
+    <id>https://artisanstatic.netlify.app/feed.atom</id>
+    <author>
+        <name>Roger</name>
+    </author>
+
+            <entry>
+            <id>https://artisanstatic.netlify.app/posts/cloudinary-media-library</id>
+            <link type="text/html" rel="alternate" href="https://artisanstatic.netlify.app/posts/cloudinary-media-library" />
+            <title>08 - Cloudinary Media Library</title>
+            <published>2021-05-18T00:00:00+00:00</published>
+            <updated>2021-05-18T00:00:00+00:00</updated>
+            <author>
+                <name>Roger</name>
+            </author>
+            <summary type="html">Register on Cloudinary. Go to config.php, add your cloud name and API key under the services key. Now you can use the media() helper in your Blade templates to easily reference files in your Cloudinary library. &amp;lt;img src=&quot;{{ media(&#039;logo.png&#039;)...</summary>
+        </entry>
+            <entry>
+            <id>https://artisanstatic.netlify.app/posts/netlify-cms</id>
+            <link type="text/html" rel="alternate" href="https://artisanstatic.netlify.app/posts/netlify-cms" />
+            <title>07 - Netlify CMS</title>
+            <published>2021-05-17T00:00:00+00:00</published>
+            <updated>2021-05-17T00:00:00+00:00</updated>
+            <author>
+                <name>Roger</name>
+            </author>
+            <summary type="html">The included files related to Netlify CMS should work out of the box. Just make sure that your Netlify Identity settings and Git Gateway settings are correctly configured. You can change the Netlify CMS version being used in config.php under the...</summary>
+        </entry>
+            <entry>
+            <id>https://artisanstatic.netlify.app/posts/code-highlighting</id>
+            <link type="text/html" rel="alternate" href="https://artisanstatic.netlify.app/posts/code-highlighting" />
+            <title>06 - Code Highlighting</title>
+            <published>2021-05-16T00:00:00+00:00</published>
+            <updated>2021-05-16T00:00:00+00:00</updated>
+            <author>
+                <name>Roger</name>
+            </author>
+            <summary type="html">Below are some examples of code blocks with syntax highlighting. Go to source/_assets/js/highlight.js to view/change the registered languages. Go to source/_assets/sass/main.scss to change the theme. HTML (and XML) &amp;lt;div class=&quot;flex-center...</summary>
+        </entry>
+            <entry>
+            <id>https://artisanstatic.netlify.app/posts/formcarry-contact-form</id>
+            <link type="text/html" rel="alternate" href="https://artisanstatic.netlify.app/posts/formcarry-contact-form" />
+            <title>05 - Formcarry Contact Form</title>
+            <published>2021-05-15T00:00:00+00:00</published>
+            <updated>2021-05-15T00:00:00+00:00</updated>
+            <author>
+                <name>Roger</name>
+            </author>
+            <summary type="html">Register on Formcarry and get your Formcarry ID. Then go to config.php and add your ID under the services key. Go to source/_assets/js/contact.js and change fakeSend(contactForm) to send(contactForm) in the lines shown below. e.preventDefault();...</summary>
+        </entry>
+            <entry>
+            <id>https://artisanstatic.netlify.app/posts/disqus-comments</id>
+            <link type="text/html" rel="alternate" href="https://artisanstatic.netlify.app/posts/disqus-comments" />
+            <title>04 - Disqus Comments</title>
+            <published>2021-05-14T00:00:00+00:00</published>
+            <updated>2021-05-14T00:00:00+00:00</updated>
+            <author>
+                <name>Roger</name>
+            </author>
+            <summary type="html">Register the website on Disqus. Get your Disqus shortname, go to config.php and add your shortname under the services key. </summary>
+        </entry>
+            <entry>
+            <id>https://artisanstatic.netlify.app/posts/google-analytics</id>
+            <link type="text/html" rel="alternate" href="https://artisanstatic.netlify.app/posts/google-analytics" />
+            <title>03 - Google Analytics</title>
+            <published>2021-05-13T00:00:00+00:00</published>
+            <updated>2021-05-13T00:00:00+00:00</updated>
+            <author>
+                <name>Roger</name>
+            </author>
+            <summary type="html">Register the website on Google Analytics. Get your tracking ID, go to config.php and add your ID under the services key. The master template is designed to only include analytics in production. This is to avoid tracking page views while you are...</summary>
+        </entry>
+            <entry>
+            <id>https://artisanstatic.netlify.app/posts/favicons</id>
+            <link type="text/html" rel="alternate" href="https://artisanstatic.netlify.app/posts/favicons" />
+            <title>02 - Favicons</title>
+            <published>2021-05-12T00:00:00+00:00</published>
+            <updated>2021-05-12T00:00:00+00:00</updated>
+            <author>
+                <name>Roger</name>
+            </author>
+            <summary type="html">Recommendation: RealFaviconGenerator You should put all of your favicon-related files in source/_assets/favicons. They will be automatically copied into the root of the build directory. Go to source/_partials/head/favicon.blade.php to change the...</summary>
+        </entry>
+            <entry>
+            <id>https://artisanstatic.netlify.app/posts/dummy-post</id>
+            <link type="text/html" rel="alternate" href="https://artisanstatic.netlify.app/posts/dummy-post" />
+            <title>01 - Dummy Post</title>
+            <published>2020-04-28T00:00:00+00:00</published>
+            <updated>2020-04-28T00:00:00+00:00</updated>
+            <author>
+                <name>Roger</name>
+            </author>
+            <summary type="html">Heading 2 Heading 3 Bold Text Italic Text This is an example inline link. This link has no title attribute. Image - Jigsaw logo   Top-level item 1  Nested item Nested item Top-level item 2  Nested item Nested item Top-level item 3  Nested item Nested...</summary>
+        </entry>
+    
+</feed>

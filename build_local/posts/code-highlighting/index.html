@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>
+        06 - Code Highlighting         | 
+        ROGER
+    </title>
+
+    <!-- favicon -->
+
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<!-- end favicon -->
+    <!-- seo/social -->
+<link rel="canonical" href="https://artisanstatic.netlify.app/posts/code-highlighting">
+<meta name="referrer" content="no-referrer-when-downgrade">
+<meta name="author" content="Roger">
+<meta name="description" content="Below are some examples of code blocks with syntax highlighting. Go to source/_assets/js/highlight.js to view/change the registered languages. Go to source/_assets/sass/main.scss to change the theme. HTML (and XML) &lt;div class="flex-center...">
+
+<meta property="og:title" content="06 - Code Highlighting">
+<meta property="og:description" content="Below are some examples of code blocks with syntax highlighting. Go to source/_assets/js/highlight.js to view/change the registered languages. Go to source/_assets/sass/main.scss to change the theme. HTML (and XML) &lt;div class="flex-center...">
+<meta property="og:image" content="https://res.cloudinary.com/artisanstatic/code.jpg">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="ROGER">
+<meta property="og:url" content="https://artisanstatic.netlify.app/posts/code-highlighting">
+
+<meta name="twitter:title" content="06 - Code Highlighting">
+<meta name="twitter:description" content="Below are some examples of code blocks with syntax highlighting. Go to source/_assets/js/highlight.js to view/change the registered languages. Go to source/_assets/sass/main.scss to change the theme. HTML (and XML) &lt;div class="flex-center...">
+<meta name="twitter:image" content="https://res.cloudinary.com/artisanstatic/code.jpg">
+<meta name="twitter:creator" content="@rogermobile">
+<meta name="twitter:site" content="@rogermobile">
+<meta name="twitter:card" content="summary">
+<!-- end seo/social -->
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js" defer></script>
+
+    <link rel="stylesheet" href="/assets/build/css/main.css?id=5c235a3f070762124850">
+</head>
+<body>
+    <section>
+        <header>
+            <nav>
+                <strong>ROGER</strong><br>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/posts">Posts</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <article>
+            <section>
+                    <h1>06 - Code Highlighting</h1>
+
+            <img src="https://res.cloudinary.com/artisanstatic/code.jpg" style="object-fit: cover; height: 250px; width: 100%;">
+    
+    <p>
+        <strong>May 16, 2021</strong><br>
+            </p>
+
+    <blockquote data-phpdate="1621123200">
+        <em>WARNING: This post is over a year old. Some of the information this contains may be outdated.</em>
+    </blockquote>
+
+    <hr>
+
+    <p>DISCLAIMER: Any 3rd-party services in these posts and in the config are only recommendations/suggestions. I am not affiliated with any of them.</p>
+
+    <p>Below are some examples of code blocks with syntax highlighting.</p>
+
+<p>Go to <code>source/_assets/js/highlight.js</code> to view/change the registered languages.</p>
+
+<p>Go to <code>source/_assets/sass/main.scss</code> to change the theme.</p>
+
+<h2>HTML (and XML)</h2>
+
+<pre><code class="language-html">&lt;div class="flex-center position-ref full-height"&gt;
+    &lt;div class="content"&gt;
+        &lt;div class="title m-b-md"&gt;
+            Laravel
+        &lt;/div&gt;
+
+        &lt;div class="links"&gt;
+            &lt;a href="https://laravel.com/docs"&gt;Documentation&lt;/a&gt;
+            &lt;a href="https://laracasts.com"&gt;Laracasts&lt;/a&gt;
+            &lt;a href="https://laravel-news.com"&gt;News&lt;/a&gt;
+            &lt;a href="https://forge.laravel.com"&gt;Forge&lt;/a&gt;
+            &lt;a href="https://github.com/laravel/laravel"&gt;GitHub&lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+<h2>CSS</h2>
+
+<pre><code class="language-css">html, body {
+    background-color: #fff;
+    color: #636b6f;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
+    height: 100vh;
+    margin: 0;
+}
+</code></pre>
+
+<h2>JS</h2>
+
+<pre><code class="language-js">window._ = require('lodash');
+window.Popper = require('popper.js').default;
+
+try {
+    window.$ = window.jQuery = require('jquery');
+
+    require('bootstrap');
+} catch (e) {}
+
+window.axios = require('axios');
+
+window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
+
+let token = document.head.querySelector('meta[name="csrf-token"]');
+
+if (token) {
+    window.axios.defaults.headers.common['X-CSRF-TOKEN'] = token.content;
+} else {
+    console.error('CSRF token not found: https://laravel.com/docs/csrf#csrf-x-csrf-token');
+}
+</code></pre>
+
+<h2>PHP</h2>
+
+<pre><code class="language-php">&lt;?php
+
+namespace App\Http\Controllers;
+
+use App\Status;
+
+class LikeController extends Controller
+{
+    public function store(Status $status)
+    {
+        if (!$status-&gt;of_friend || $status-&gt;liked) {
+            return response()-&gt;json(['flash' =&gt; 'Invalid operation.'], 422);
+        }
+
+        auth()-&gt;user()-&gt;like($status);
+
+        return response()-&gt;json('liked', 201);
+    }
+
+    public function destroy(Status $status)
+    {
+        auth()-&gt;user()-&gt;unlike($status);
+
+        return response()-&gt;json('unliked', 200);
+    }
+}
+</code></pre>
+
+<h2>Apache</h2>
+
+<pre><code class="language-apache">&lt;IfModule mod_rewrite.c&gt;
+    &lt;IfModule mod_negotiation.c&gt;
+        Options -MultiViews -Indexes
+    &lt;/IfModule&gt;
+
+    RewriteEngine On
+
+    # Handle Authorization Header
+    RewriteCond %{HTTP:Authorization} .
+    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
+    # Redirect Trailing Slashes If Not A Folder...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_URI} (.+)/$
+    RewriteRule ^ %1 [L,R=301]
+
+    # Handle Front Controller...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^ index.php [L]
+&lt;/IfModule&gt;
+</code></pre>
+
+    <hr>
+
+    <button data-sharer="facebook" data-url="https://artisanstatic.netlify.app/posts/code-highlighting" style="background: #3b5998;">
+    Facebook
+</button>
+
+<button data-sharer="twitter" data-url="https://artisanstatic.netlify.app/posts/code-highlighting" data-title="06 - Code Highlighting" style="background: #00aced;">
+    Twitter
+</button>
+
+<button data-sharer="reddit" data-url="https://artisanstatic.netlify.app/posts/code-highlighting" style="background: #ff4500;">
+    Reddit
+</button>
+
+<button data-sharer="linkedin" data-url="https://artisanstatic.netlify.app/posts/code-highlighting" style="background: #0077b5;">
+    LinkedIn
+</button>
+
+            <p>Comments are not enabled for this post.</p>
+                </section>
+        </article>
+
+        <footer>
+            <small>
+                &copy; <span data-year></span> Roger &nbsp;&bull;&nbsp;
+                <a href="/feed.atom">RSS</a> &nbsp;&bull;&nbsp;
+                Roger is King &nbsp;&bull;&nbsp;
+                <a href="https://github.com/jacobfr1edr1ch/Roger-Web">GitHub repo</a>
+            </small>
+        </footer>
+    </section>
+
+    <script src="/assets/build/js/main.js?id=11a7d1d26848343a74b5"></script>
+        <script>
+if (window.netlifyIdentity) {
+    window.netlifyIdentity.on('init', (user) => {
+        if (!user) {
+            window.netlifyIdentity.on('login', () => {
+                document.location.href = '/admin/';
+            });
+        }
+    });
+}
+</script>
+</body>
+</html>

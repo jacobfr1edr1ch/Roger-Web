@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>
+        05 - Formcarry Contact Form         | 
+        ROGER
+    </title>
+
+    <!-- favicon -->
+
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<!-- end favicon -->
+    <!-- seo/social -->
+<link rel="canonical" href="https://artisanstatic.netlify.app/posts/formcarry-contact-form">
+<meta name="referrer" content="no-referrer-when-downgrade">
+<meta name="author" content="Roger">
+<meta name="description" content="Register on Formcarry and get your Formcarry ID. Then go to config.php and add your ID under the services key. Go to source/_assets/js/contact.js and change fakeSend(contactForm) to send(contactForm) in the lines shown below. e.preventDefault();...">
+
+<meta property="og:title" content="05 - Formcarry Contact Form">
+<meta property="og:description" content="Register on Formcarry and get your Formcarry ID. Then go to config.php and add your ID under the services key. Go to source/_assets/js/contact.js and change fakeSend(contactForm) to send(contactForm) in the lines shown below. e.preventDefault();...">
+<meta property="og:image" content="https://res.cloudinary.com/artisanstatic/contact.jpg">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="ROGER">
+<meta property="og:url" content="https://artisanstatic.netlify.app/posts/formcarry-contact-form">
+
+<meta name="twitter:title" content="05 - Formcarry Contact Form">
+<meta name="twitter:description" content="Register on Formcarry and get your Formcarry ID. Then go to config.php and add your ID under the services key. Go to source/_assets/js/contact.js and change fakeSend(contactForm) to send(contactForm) in the lines shown below. e.preventDefault();...">
+<meta name="twitter:image" content="https://res.cloudinary.com/artisanstatic/contact.jpg">
+<meta name="twitter:creator" content="@rogermobile">
+<meta name="twitter:site" content="@rogermobile">
+<meta name="twitter:card" content="summary">
+<!-- end seo/social -->
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js" defer></script>
+
+    <link rel="stylesheet" href="/assets/build/css/main.css?id=5c235a3f070762124850">
+</head>
+<body>
+    <section>
+        <header>
+            <nav>
+                <strong>ROGER</strong><br>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/posts">Posts</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <article>
+            <section>
+                    <h1>05 - Formcarry Contact Form</h1>
+
+            <img src="https://res.cloudinary.com/artisanstatic/contact.jpg" style="object-fit: cover; height: 250px; width: 100%;">
+    
+    <p>
+        <strong>May 15, 2021</strong><br>
+            </p>
+
+    <blockquote data-phpdate="1621036800">
+        <em>WARNING: This post is over a year old. Some of the information this contains may be outdated.</em>
+    </blockquote>
+
+    <hr>
+
+    <p>DISCLAIMER: Any 3rd-party services in these posts and in the config are only recommendations/suggestions. I am not affiliated with any of them.</p>
+
+    <p>Register on <a href="https://formcarry.com/register">Formcarry</a> and get your <strong>Formcarry ID</strong>. Then go to <code>config.php</code> and add your ID under the <code>services</code> key.</p>
+
+<p>Go to <code>source/_assets/js/contact.js</code> and change <code>fakeSend(contactForm)</code> to <code>send(contactForm)</code> in the lines shown below.</p>
+
+<pre><code class="language-js">e.preventDefault();
+e.target.elements['submit'].disabled = true;
+
+fakeSend(contactForm)
+    .then((response) =&gt; {
+        notyf.success('Your message has been sent.');
+        contactForm.reset();
+    })
+</code></pre>
+
+<p>And finally, remove this line.</p>
+
+<pre><code class="language-js">const fakeSend = () =&gt; new Promise((resolve) =&gt; setTimeout(resolve, 2000));
+</code></pre>
+
+    <hr>
+
+    <button data-sharer="facebook" data-url="https://artisanstatic.netlify.app/posts/formcarry-contact-form" style="background: #3b5998;">
+    Facebook
+</button>
+
+<button data-sharer="twitter" data-url="https://artisanstatic.netlify.app/posts/formcarry-contact-form" data-title="05 - Formcarry Contact Form" style="background: #00aced;">
+    Twitter
+</button>
+
+<button data-sharer="reddit" data-url="https://artisanstatic.netlify.app/posts/formcarry-contact-form" style="background: #ff4500;">
+    Reddit
+</button>
+
+<button data-sharer="linkedin" data-url="https://artisanstatic.netlify.app/posts/formcarry-contact-form" style="background: #0077b5;">
+    LinkedIn
+</button>
+
+            <p>Comments are not enabled for this post.</p>
+                </section>
+        </article>
+
+        <footer>
+            <small>
+                &copy; <span data-year></span> Roger &nbsp;&bull;&nbsp;
+                <a href="/feed.atom">RSS</a> &nbsp;&bull;&nbsp;
+                Roger is King &nbsp;&bull;&nbsp;
+                <a href="https://github.com/jacobfr1edr1ch/Roger-Web">GitHub repo</a>
+            </small>
+        </footer>
+    </section>
+
+    <script src="/assets/build/js/main.js?id=11a7d1d26848343a74b5"></script>
+        <script>
+if (window.netlifyIdentity) {
+    window.netlifyIdentity.on('init', (user) => {
+        if (!user) {
+            window.netlifyIdentity.on('login', () => {
+                document.location.href = '/admin/';
+            });
+        }
+    });
+}
+</script>
+</body>
+</html>
